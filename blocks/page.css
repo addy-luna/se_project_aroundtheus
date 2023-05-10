@@ -1,19 +1,19 @@
 .page {
-    background: #000;
-    font-family: "Inter", sans-serif;
+  background: #000;
+  font-family: "Inter", sans-serif;
 }
 
 .page__content {
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .page__section {
-    width: 100%;
-    max-width: 882px;
-    box-sizing: border-box;
-    position: relative;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 882px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 auto;
 }
