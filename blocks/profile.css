@@ -19,14 +19,12 @@
 
 .profile__title {
   color: #ffffff;
-  grid-area: title;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
   line-height: 48px;
   margin: 0;
-  grid-area: title;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
