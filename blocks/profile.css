@@ -7,8 +7,8 @@
 }
 
 .profile__info {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: baseline;
   grid-template-areas:
     "title button"
     "description description";
@@ -19,6 +19,7 @@
 
 .profile__title {
   color: #ffffff;
+  grid-area: title;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 500;
