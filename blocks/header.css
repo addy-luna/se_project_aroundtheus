@@ -1,5 +1,5 @@
 .header {
-  min-height: 120px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   flex-shrink: 0;
@@ -12,8 +12,8 @@
 }
 
 .header__logo {
-  width: 173px;
-  height: 33px;
+  width: 126px
+  height: 24px;
   object-fit: contain;
 }
 
@@ -29,3 +29,6 @@
     margin-left: 27px;
   }
 }
+
+
+dasdasda

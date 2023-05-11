@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 .card__image {
   width: 282px;
@@ -39,4 +40,14 @@
 }
 .card__like-button:hover {
   opacity: 0.5;
+}
+@media (min-width: 627px) and (max-width: 768px) {
+  .card {
+    margin-top: 36px;
+  }
+}
+@media (min-width: 769px) and (max-width: 942px) {
+  .card {
+    margin: 26px 0 0 0;
+  }
 }
