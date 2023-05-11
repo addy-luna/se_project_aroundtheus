@@ -8,7 +8,7 @@
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
+This project is made so all the elements are displayed correctly on popular screen sizes.
   
 **Figma**  
   
@@ -20,5 +20,4 @@ This project is made so all the elements are displayed correctly on popular scre
 
 
 ![alt text](./images/Sprint%203_%20Around%20the%20US.jpg)
-  
-Good luck and have fun!
+
