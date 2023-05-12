@@ -1,14 +1,12 @@
 .header {
   min-height: 84px;
+  max-width: 882px;
   display: flex;
-  align-items: center;
   flex-shrink: 0;
   border-bottom: 1px solid rgba(84, 84, 84, 0.7);
   width: 100%;
-  max-width: 882px;
   box-sizing: border-box;
-  position: relative;
-  margin: 0 auto;
+
 }
 
 .header__logo {
@@ -17,16 +15,17 @@
   object-fit: contain;
 }
 
-@media screen and (max-width: 621px) {
+@media screen and (max-width: 1280px) {
   .header {
     width: 100%;
     margin: 0;
+    height: 24px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .header__logo {
-    margin-left: 27px;
+    padding-left: 27px;
+    height: 24px;
   }
 }
-
