@@ -26,7 +26,7 @@ An interactive website that allows users to like and add photos. The user can al
   
 **Visit the live site!**
 
-* [Link to the project on GitHub Pages](https://www.addy-luna.github.io/se_project_aroundtheus_AT/)  
+* [Link to the project on GitHub Pages](https://addy-luna.github.io/se_project_aroundtheus_AT/)  
 
 
 **Images**  
