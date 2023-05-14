@@ -14,8 +14,7 @@
     "description description";
   grid-template-columns: minmax(auto, 373px) auto;
   grid-gap: 7px 18px;
-  margin-right: auto; 
-  margin-left: auto;
+
 }
 
 .profile__title {
@@ -150,6 +149,15 @@
   }
 }
 
+@media screen and (max-width: 720px) {
+  .profile__picture {
+    margin: auto;
+  }
+
+
+}
+
+
 @media screen and (max-width: 480px) {
   .profile {
     flex-direction: column;
@@ -166,7 +174,7 @@
   }
   .profile__title {
     text-align: center;
-    
+
   }
   .profile__add-button {
     width: 282px;
