@@ -16,7 +16,9 @@
   width: 173px;
   height: 33px;
   object-fit: contain;
-  margin-left: 25px;
+  margin-left: 12px;
+  margin-top: 45px;
+  margin-bottom: 41px;
 }
 
 @media screen and (max-width: 800px) {
@@ -35,6 +37,7 @@
     margin-top: 0;
   }
   .header__logo {
+
     padding-left: 27px;
     padding-top: 28px;
     padding-bottom: 32px;
