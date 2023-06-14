@@ -1,133 +1,109 @@
 .modal {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
+position: fixed;
+top: 0;
+left: 0;
+bottom: 0;
+right: 0;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 99;
+display: none;
+}
+
+.modal_opened {
+display: flex;
+}
+
+.modal__container {
+margin: 0 auto;
+width: 430px;
+background: #ffffff;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+border-radius: 10px;
+color: black;
+margin: auto;
+padding: 36px;
+position: relative;
+}
+
+.modal__heading {
+margin-top: 0;
+font-family: "Inter", sans-serif;
+font-size: 24px;
+font-weight: 900;
+line-height: 29px;
+letter-spacing: 0em;
+text-align: left;
+margin-bottom: 25px;
+}
+
+.modal__form {
+display: flex;
+flex-direction: column;
+}
+
+.modal__form-input {
+border: 1px solid transparent;
+border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+margin-top: 30px;
+padding-bottom: 13px;
+font-family: "Inter", sans-serif;
+font-size: 14px;
+line-height: 16.94px;
+}
+
+.modal__close {
+background-image: url(../images/Close\ Icon.svg);
+border: none;
+background-color: transparent;
+cursor: pointer;
+width: 40px;
+height: 40px;
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+top: -40px;
+right: -40px;
+}
+
+.modal__button:hover {
+transition: 0.1s;
+opacity: 80%;
+}
+
+.modal__save {
+margin-top: 47px;
+cursor: pointer;
+font-family: "Inter", sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0em;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 50.15px;
+background: #000000;
+border-radius: 2px;
+color: #fff;
+border: 0;
+}
+.modal__save:hover {
+transition: 0.1s;
+opacity: 60%;
+}
+
+@media screen and (max-width: 581px) {
+.modal__close {
+    top: -39px;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: flex;
-    padding: 0 19px;
+    width: 26px;
+    height: 26px;
 }
-
-.modal_heading {
-    color: black;
-    font-family: 'Inter', Arial, 'Times New Roman';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 34px;
+.modal__container {
+    width: 282px;
 }
-
-.modal_opener {
-    display: flex;
+.modal__heading {
+    margin-bottom: 45px;
 }
-
-.modal_button {
-    display: flex;
-    font-family: 'Inter', Arial, 'Times New Roman';
-    margin-left: 36px;
-    margin-right: 36px;
-
-}
-
-.modal_button:hover {
-    cursor: pointer;
-}
-
-.modal_container {
-    position: relative;
-    padding: 36px;
-    background-color: #ffff;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-}
-
-.modal_close {
-    border: none;
-    position: absolute;
-    cursor: pointer;
-    top: -45px;
-    right: -45px;
-    background-image: url(../images/Close\ Icon.svg);
-    width: 40PX;
-    height: 40px;
-    background-color: transparent;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal__form_label {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 8px;
-    font-family: "Inter", Arial, 'Times New Roman';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-}
-
-.modal__form_description {
-    font-family: 'Inter', Arial, 'Times New Roman';
-    width: 100%;
-    line-height: 17px;
-    /* border line */
-    display: flex;
-    border-style: rgba(0, 0, 0, 0.1);
-    border-width: 1px;
-    border-style: solid;
-    border-left-style: hidden;
-    border-right-style: hidden;
-    border-top-style: hidden;
-    height: 47px;
-    color: #000;
-}
-
-.modal__form_description::placeholder {
-    color: #000;
-}
-
-.modal__form_button:hover {
-    cursor: pointer;
-}
-
-.modal__form_button {
-    justify-content: center;
-    align-items: center;
-    background: #000;
-    font-family: "Inter", Arial, "Times New Roman";
-    font-size: 18px;
-    line-height: 22px;
-    border-radius: 2px;
-    height: 50px;
-    width: 358px;
-    color: #ffffff;
-    margin-top: 48px;
-}
-
-@media only screen (min-width: 466px) and (max-width: 768px) {
-    .modal_container {
-        width: 282px;
-        height: 322px;
-        left: 19px;
-        top: 123x;
-    }
-
-    .modal__form_button {
-        width: 238px;
-        height: 46px;
-        left: 41px;
-        top: 374px;
-    }
-
-    .modal__form_description {
-        font-size: 14px;
-    }
-
-
-
 }

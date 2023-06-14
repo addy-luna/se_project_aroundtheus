@@ -107,22 +107,27 @@
       <footer class="footer">
         <p class="footer__copyright">&#169;2022 Around The U.S.</p>
       </footer>
-    <div class="modal">
-        <div class="modal_container">
-          <button class="modal_close"></button>
-          <form class="modal_form">
-              <p class="modal_heading">Edit profile</p>
-              <label class="modal__form_label">
-                  <input class="modal__form_description" type="text" id="jacques-cousteau"
-                      placeholder="Jacques Cousteau" required />
-              </label>
-              <label class="modal__form_label">
-                  <input class="modal__form_description" type="text" id="Explorer" placeholder="Explorer" required />
-              </label>
-              <button class="modal__form_button">Save</button>
+      <div class="modal" id="profileEditModal">
+        <div class="modal__container">
+          <button class="modal__close" id="profileCloseBtn" type="button"></button>
+          <h2 class="modal__heading">Edit profile</h2>
+          <form class="modal__form" name="modal__form">
+            <input
+              name="modal__form"
+              class="modal__form-input"
+              type="text"
+              id="profile-title-input"
+              placeholder="Name" />
+            <input
+              name="modal__form"
+              class="modal__form-input"
+              type="text"
+              id="profile-description-input"
+              placeholder="About me" />
+            <button class="modal__save" type="submit">Save</button>
           </form>
         </div>
-    </div>
+      </div>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
