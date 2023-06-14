@@ -1,12 +1,13 @@
 .modal {
-position: fixed;
-top: 0;
-left: 0;
-bottom: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.5);
-z-index: 99;
-display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    padding: 0 19px;
 }
 
 .modal_opened {
@@ -88,22 +89,23 @@ border-radius: 2px;
 color: #fff;
 border: 0;
 }
+
 .modal__save:hover {
 transition: 0.1s;
 opacity: 60%;
 }
 
 @media screen and (max-width: 581px) {
-.modal__close {
-    top: -39px;
-    right: 0;
-    width: 26px;
-    height: 26px;
-}
-.modal__container {
-    width: 282px;
-}
-.modal__heading {
-    margin-bottom: 45px;
-}
+    .modal__close {
+        top: -39px;
+        right: 0;
+        width: 26px;
+        height: 26px;
+    }
+    .modal__container {
+        width: 282px;
+    }
+    .modal__heading {
+        margin-bottom: 45px;
+    }
 }
