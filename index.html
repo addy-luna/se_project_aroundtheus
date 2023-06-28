@@ -8,107 +8,44 @@
     <link href="./pages/index.css" rel="stylesheet" />
   </head>
 <body class="page">
-    <div class="page__content">
-            <header class="header">
-              <img
-                src="./images/Vector.svg"
-                class="logo header__logo"
-                alt="Around the U.S. logo"
-              />
-            </header>
-          <main class="content">
-            <section class="profile page__section">
-              <img
-                src="./images/jacques-cousteau.jpg"
-                alt="avatar"
-                class="profile__picture"
-              />
-              <div class="profile__info">
-                <h1 class="profile__title" id="profile-title">Jacques Cousteau</h1>
-                <button class="profile__edit-button" id="profileEditBtn" type="button"></button>
-                <p class="profile__description" id="profile-description">Explorer</p>
-              </div>
-              <button class="profile__add-button" type="button">
-                <img
-                  class="profile__add-button-icon"
-                  src="./images/plus.svg"
-                  alt="add button"
-                />
-              </button>
-            </section>
-            <section class="cards">
-              <ul class="cards__list">
-                <li class="card">
-                  <img
-                    src="./images/yosemite-valley.svg"
-                    class="card__image"
-                    alt="yosemite"
-                  />
-                  <div class="card__description">
-                    <h2 class="card__title">Yosemite Valley</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-                <li class="card">
-                  <img
-                    src="./images/lake-louise.png"
-                    class="card__image"
-                    alt="lakelouise"
-                  />
-                  <div class="card__description">
-                    <h2 class="card__title">Lake Louise</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-                <li class="card">
-                  <img
-                    src="./images/bald-mountains.png"
-                    class="card__image"
-                    alt="baldmountains"
-                  />
-                  <div class="card__description">
-                    <h2 class="card__title">Bald Mountains</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-                <li class="card">
-                  <img src="./images/latemar.png" class="card__image" alt="latemar" />
-                  <div class="card__description">
-                    <h2 class="card__title">Latemar</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-                <li class="card">
-                  <img
-                    src="./images/vanoise-national-park.png"
-                    class="card__image"
-                    alt="vanoise"
-                  />
-                  <div class="card__description">
-                    <h2 class="card__title">Vanoise National Park</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-                <li class="card">
-                  <img
-                    src="./images/lago-di-braies.png"
-                    class="card__image"
-                    alt="lago"
-                  />
-                  <div class="card__description">
-                    <h2 class="card__title">Lago di Braies</h2>
-                    <button class="card__like-button" type="button"></button>
-                  </div>
-                </li>
-              </ul>
-            </section>
-          </main>
-          <footer class="footer">
-            <p class="footer__copyright">&#169;2022 Around The U.S.</p>
-          </footer>
+  <div class="page__content">
+    <header class="header">
+      <img
+        src="./images/Vector.svg"
+        class="logo header__logo"
+        alt="Around the U.S. logo"
+      />
+    </header>
+    <main class="content">
+      <section class="profile page__section">
+        <img
+          src="./images/jacques-cousteau.jpg"
+          alt="avatar"
+          class="profile__picture"
+        />
+        <div class="profile__info">
+          <h1 class="profile__title" id="profile-title">Jacques Cousteau</h1>
+          <button class="profile__edit-button" id="profileEditBtn" type="button"></button>
+          <p class="profile__description" id="profile-description">Explorer</p>
+        </div>
+        <button class="profile__add-button" type="button">
+          <img
+            class="profile__add-button-icon"
+            src="./images/plus.svg"
+            alt="add button"
+          />
+        </button>
+      </section>
+      <section class="cards">
+        <ul class="cards__list" id="cardsContainer"></ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__copyright">&#169;2023 Adela Tatum</p>
+    </footer>
   </div>
 
-        <div class="modal" id="profileEditBtn">
+        <div class="modal" id="profileEditModal">
           <div class="modal__container">
             <button class="modal__close" id="profileCloseBtn"></button>
             <h2 class="modal__heading">Edit profile</h2>
@@ -129,6 +66,15 @@
             </form>
           </div>
         </div>
+        <template id="card-template">
+          <li class="card">
+            <img class="card__image" src="" alt="" />
+            <div class="card__description">
+              <h2 class="card__title"></h2>
+              <button type="button" class="card__like-button"></button>
+            </div>
+          </li>
+        </template>
     <script src="./scripts/index.js"></script>
   </body>
 </html>
