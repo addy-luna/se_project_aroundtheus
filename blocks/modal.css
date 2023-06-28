@@ -64,6 +64,7 @@ background-size: contain;
 position: absolute;
 top: -40px;
 right: -40px;
+transform: rotate(-90deg);
 }
 
 .modal__close:hover {
