@@ -41,7 +41,6 @@ const cardTemplate = document
   .querySelector("#card-template")
   .content.querySelector(".card");
 
-function closePopup() {
 function openPopup() {
 profileTitleInput.value = profileTitle.textContent;
 profileDescriptionInput.value = profileDescription.textContent;
