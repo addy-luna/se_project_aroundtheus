@@ -21,7 +21,7 @@ const initialCards = [
   },
   {
     name: "Lago di Braies",
-    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg "
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/around-project/lago.jpg"
   },
 ];
 
@@ -34,7 +34,6 @@ const profileTitleInput = document.querySelector("#profile-title-input");
 const profileDescriptionInput = document.querySelector("#profile-description-input");
 const profileEditForm = document.querySelector(".modal__form");
 
-
 const cardListEl = document.querySelector("#cardsContainer");
 
 const cardTemplate = document
@@ -42,15 +41,14 @@ const cardTemplate = document
   .content.querySelector(".card");
 
 function openPopup() {
-profileTitleInput.value = profileTitle.textContent;
-profileDescriptionInput.value = profileDescription.textContent;
-profileEditModal.classList.add("modal_opened");
+  profileTitleInput.value = profileTitle.textContent;
+  profileDescriptionInput.value = profileDescription.textContent;
+  profileEditModal.classList.add("modal_opened");
 }
 
-function closePopup() { 
-  profileEditModal.classList.remove("modal_opened"); 
-} 
-
+function closePopup() {
+  profileEditModal.classList.remove("modal_opened");
+}
 
 function handleProfileEditSubmit(e) {
   e.preventDefault();
@@ -76,12 +74,6 @@ initialCards.forEach((cardData) => {
   cardListEl.append(cardElement);
 });
 
-
-profileEditBtn.addEventListener("click", () => {
-  profileTitleInput.value = profileTitle.textContent;
-  profileDescriptionInput.value = profileDescription.textContent;
-  profileEditModal.classList.add("modal_opened");
-});
-
+profileEditBtn.addEventListener("click", openPopup);
 profileCloseBtn.addEventListener("click", closePopup);
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
