@@ -44,7 +44,7 @@
       <p class="footer__copyright">&#169;2023 Adela Tatum</p>
     </footer>
   </div>
-
+        <!-- Add/ update profile modal-->
         <div class="modal" id="profileEditModal">
           <div class="modal__container">
             <button class="modal__close" id="profileCloseBtn" type="button"></button>
@@ -66,6 +66,30 @@
             </form>
           </div>
         </div>
+
+        <!-- Add card modal-->
+        <div class="modal" id="profileEditModal">
+          <div class="modal__container">
+            <button class="modal__close" id="profileCloseBtn" type="button"></button>
+            <h2 class="modal__heading">New Place</h2>
+            <form class="modal__form" name="modal form">
+              <input
+                name="modal__form"
+                class="modal__form-input"
+                type="text"
+                id="profile-title-input"
+                placeholder="Title" />
+              <input
+                name="modal__form"
+                class="modal__form-input"
+                type="text"
+                id="profile-description-input"
+                placeholder="Image link" />
+              <button class="modal__save" type="submit">Create</button>
+            </form>
+          </div>
+        </div>
+
         <template id="card-template">
           <li class="card">
             <img class="card__image" src="" alt="" />

@@ -1,3 +1,8 @@
+// profile__edit-button (class)
+// .profile__edit-button (class selector)
+
+
+// array of initial card data
 const initialCards = [
   {
     name: "Yosemite Valley",
