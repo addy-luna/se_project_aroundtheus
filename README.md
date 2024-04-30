@@ -18,6 +18,7 @@ An interactive website that allows users to like and add photos. The user can al
 
 * HTML
 * CSS
+* JavaScript
 
 
 **Figma**  
