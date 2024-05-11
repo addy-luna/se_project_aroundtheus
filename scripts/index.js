@@ -51,6 +51,8 @@ const profileDescription = document.querySelector("#profile-description");
 const profileDescriptionInput = document.querySelector("#profile-description-input");
 
 
+// const cardTitleInput =
+
 const cardListEl = document.querySelector("#cardsContainer");
 
 const cardTemplate = document
@@ -84,6 +86,14 @@ function handleProfileEditSubmit(e) {
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup(profileEditModal);
+}
+
+
+function handleAddCardFormSubmit(e) {
+  e.preventDefault();
+  const CardElement = getCardElement();
+
+  closePopup(addCardModal);
 }
 
 
