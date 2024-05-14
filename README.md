@@ -3,23 +3,25 @@
 ### Overview  
 
 * Intro  
-* Figma  
-* Images  
+* Description
+* Technologies
+* Figma
+* Visit Social Media Web App
+* Images
   
 **Intro**
   
-This project is made so all the elements are displayed correctly on popular screen sizes.
+A simple social media application designed to share moments through photos.
   
 **Description**
 
-An interactive website that allows users to like and add photos. The user can also add changes to their profiles.
-
+ Built using HTML, CSS, and JavaScript, this social media app allows you to update your profile, upload new photos, delete photos, and like photos placed in a grid format.
+ 
 **Technologies**
 
 * HTML
 * CSS
 * JavaScript
-
 
 **Figma**  
   
