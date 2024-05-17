@@ -33,8 +33,10 @@ const initialCards = [
 
 // wrappers
 const profileEditModal = document.querySelector("#profileEditModal");
-const profileEditForm = document.querySelector(".modal__form");
+const profileEditForm = profileEditModal.querySelector(".modal__form");
+
 const addCardModal = document.querySelector("#addCardModal");
+const addCardEditForm = addCardModal.querySelector(".modal__form");
 
 // buttons
 const profileModalCloseButton = profileEditModal.querySelector("#profileCloseBtn");
@@ -45,6 +47,10 @@ const profileEditBtn = document.querySelector("#profileEditBtn");
 // input
 const profileTitle = document.querySelector("#profile-title");
 const profileTitleInput = document.querySelector("#profile-title-input");
+
+// add card
+const cardTitleInput = addCardEditForm.querySelector(".modal__input_type_title");
+const cardUrlInput = addCardEditForm.querySelector(".modal__input_type_url");
 
 // description input
 const profileDescription = document.querySelector("#profile-description");
@@ -93,6 +99,13 @@ function handleAddCardFormSubmit(e) {
   e.preventDefault();
   const CardElement = getCardElement();
 
+  const titleValue = cardTitleInput.value;
+  const urlValue = cardUrlInput.value;
+  console.log('titleValue', titleValue);
+  return console.log('urlValue', urlValue);
+
+
+
   closePopup(addCardModal);
 }
 
@@ -104,6 +117,7 @@ function getCardElement(cardData) {
   const cardTitleEl = cardElement.querySelector(".card__title");
 
   cardTitleEl.textContent = cardData.name;
+
   cardImageEl.alt = cardData.name;
   cardImageEl.src = cardData.link;
 
@@ -118,7 +132,7 @@ initialCards.forEach((cardData) => {
 });
 
 
-// event listeners
+// event form listeners
 profileEditBtn.addEventListener("click", () => {
   profileTitleInput.value = profileTitle.textContent;
   profileDescriptionInput.value = profileDescription.textContent;
@@ -130,6 +144,7 @@ profileModalCloseButton.addEventListener("click", () =>
   closePopup(profileEditModal));
 
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
+addCardEditForm.addEventListener("submit", handleAddCardFormSubmit);
 
 
 // add new card button listener
