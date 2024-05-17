@@ -66,13 +66,13 @@ const cardTemplate = document
   .content.querySelector(".card");
 
 
+// function is the one way to render cards on app
+function renderCard(cardData, wrapper) {
+  const cardElement = getCardElement(cardData);
+  wrapper.prepend(cardElement);
 
-// function openPopup() {
-//   profileTitleInput.value = profileTitle.textContent;
-//   profileDescriptionInput.value = profileDescription.textContent;
+}
 
-//   profileEditModal.classList.add("modal_opened");
-// }
 
 // modal function - open modal
 function openPopup(modal) {
@@ -97,13 +97,11 @@ function handleProfileEditSubmit(e) {
 
 function handleAddCardFormSubmit(e) {
   e.preventDefault();
-  const CardElement = getCardElement();
+  //const addCardElement = getCardElement();
 
-  const titleValue = cardTitleInput.value;
-  const urlValue = cardUrlInput.value;
-  console.log('titleValue', titleValue);
-  return console.log('urlValue', urlValue);
-
+  const name = cardTitleInput.value;
+  const link = cardUrlInput.value;
+  renderCard({name, link}, cardListEl);
 
 
   closePopup(addCardModal);
@@ -126,10 +124,7 @@ function getCardElement(cardData) {
 
 
 //
-initialCards.forEach((cardData) => {
-  const cardElement = getCardElement(cardData);
-  cardListEl.append(cardElement);
-});
+initialCards.forEach((cardData) => renderCard(cardData, cardListEl));
 
 
 // event form listeners
