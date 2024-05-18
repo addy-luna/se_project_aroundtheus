@@ -115,13 +115,14 @@ function getCardElement(cardData) {
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
   const likeButton = cardElement.querySelector('.card__like-button');
-  // find delete button
+  const trashButton = cardElement.querySelector('.card__trash-button');
 
 
+  trashButton.addEventListener('click', () => {
+    cardElement.remove();
+  })
 
 
-  // add the event listener to delete button
-    // cardElement.remove(); -- It will be similar to the like button
 
   // add click listener to card image element
     // openModal with previewImageModal
