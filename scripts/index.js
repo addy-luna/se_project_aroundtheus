@@ -117,6 +117,9 @@ function getCardElement(cardData) {
   const likeButton = cardElement.querySelector('.card__like-button');
   // find delete button
 
+
+
+
   // add the event listener to delete button
     // cardElement.remove(); -- It will be similar to the like button
 
