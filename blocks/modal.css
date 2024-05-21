@@ -23,10 +23,14 @@
 
 
 .modal__container {
-  there position: relative;
-  margin: auto;
   background-color: #fff;
+  margin: auto;
+  padding: 36px;
+  max-width: 440px;
+  width: 100%;
   border-radius: 10px;
+  position: relative;
+  display: grid;
   box-sizing: border-box;
 }
 
@@ -136,6 +140,8 @@
 
 .modal__container-image {
   background: transparent;
+  position: relative;
+  margin: auto;
 }
 
 @media screen and (max-width: 620px) {

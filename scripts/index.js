@@ -84,7 +84,7 @@ function renderCard(cardData, wrapper) {
 
 // modal function - open modal
 function openPopup(modal) {
-  modal.classList.add("#modal__container");
+  modal.classList.add("modal_opened");
 }
 
 
