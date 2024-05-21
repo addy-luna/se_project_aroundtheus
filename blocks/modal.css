@@ -16,21 +16,18 @@
 }
 
 .modal_opened {
-
   visibility: visible;
   opacity: 5;
   transition-delay: 0s;
 }
 
 
-
-
 .modal__container {
-  background-color: #fff;
+  there position: relative;
   margin: auto;
+  background-color: #fff;
   border-radius: 10px;
   box-sizing: border-box;
-
 }
 
 .modal__heading {
@@ -78,8 +75,8 @@
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  top: calc(6%);
-  right: calc(9% + 5px);
+  bottom: calc(100%);
+  left: calc(100% + 5px);
   transform: rotate(-90deg);
 
 }
