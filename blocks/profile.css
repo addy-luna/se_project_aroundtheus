@@ -144,6 +144,7 @@
   .profile__edit-button {
     width: 18px;
     height: 18px;
+    margin-right: 9px;
     background-size: 8px 8px;
   }
 }
