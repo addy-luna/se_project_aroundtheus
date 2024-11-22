@@ -97,6 +97,8 @@ function closePopup(modal) {
 // submit edit change event
 function handleProfileEditSubmit(e) {
   e.preventDefault();
+
+  
   profileTitle.textContent = profileTitleInput.value;
   profileDescription.textContent = profileDescriptionInput.value;
   closePopup(profileEditModal);
